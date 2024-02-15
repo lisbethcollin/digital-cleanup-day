@@ -1,9 +1,78 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
+import Image from "astro/components/Image.astro";
+import herofoto from "../assets/images/plane.png"
 ---
 <MainLayout title="Titel">
-	<article>
-		<p>Index indhold</p>
-	</article>
+	<section id="hero" class="grid grid-cols-3 gap-2">
+		<div class="col-span-2">
+			<Image src={herofoto} alt="herofoto" 
+
+			class=""></Image>
+		</div>
+		<div class="col-span-1">
+			<h2>Hero section</h2>
+		</div>
+	</section>
+	<section id="digitalt_skrald">
+		<h2>Hvad er digitalt skrald</h2>
+	</section>
+	<section id="">
+		<h2>Problemet med</h2>
+	</section>
+	<section>
+ 		<h2>Vidste du </h2>
+	</section>
+	<section>
+		<h2>How to</h2>
+	</section>
+	<section>
+		<h2>Hvor meget?</h2>
+	</section>
+	<section id="formular" class="max-w-lg mx-auto ">
+		<form class="mt-8 max-w-lg">
+			<h2 class="text-4xl mt-20 -mb-2 text-pink-500">Køb bogen</h2>
+			<div class="grid grid-cols-1 gap-2 mt-8">
+				<label for="antal" class="text-pink-400">Antal:</label>
+				<input type="number" id="antal" placeholder="1" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+			</div>
+			<div class="mt-8">
+				<span class="text-pink-400 mr-2">Levering:</span>
+				<input type="radio" id="postnord" name="levering" >
+				<label for="postnord" checked="checked" class="text-pink-400 mx-2">Postnord</label>
+				<input type="radio" name="levering" id="afhent">
+				<label for="afhent" class="text-pink-400 mx-2">Afhent selv</label>
+			</div>
+			<div class="grid grid-cols-1 gap-2 mt-8">
+				<label for="navn" class="text-pink-400">Navn:</label>
+				<input type="text" id="navn" placeholder="Navn" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+			</div>
+			<div class="grid grid-cols-1 gap-2 mt-8">
+				<label for="adresse" class="text-pink-400">Adresse:</label>
+				<input type="text" id="adresse" placeholder="Adresse" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">  
+			</div>
+			<div class="grid grid-cols-1 gap-2 mt-8">
+				<label for="mail" class="text-pink-400">E-mail:</label>
+				<input type="email" id="mail" placeholder="E-mail" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+			</div>
+			<div class="grid grid-cols-6 gap-2 mt-8">
+				<label for="by" class="text-pink-400 col-span-6">Postnummer & by</label>
+				<input type="text" name="postnummer" id="by" placeholder="Post nr." class="col-span-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+				<input type="text" name="bynavn" id="by" placeholder="By" class="col-span-4 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+			</div>
+			<div class="grid grid-cols-1 gap-2 mt-8">
+				<label for="tlf" class="text-pink-400">Telefon:</label>
+				<input type="tel" id="tlf" placeholder="Telefon" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+			</div>
+			<div class=" mt-8">
+				<input type="checkbox" id="nyhedsbrev" >
+				<label for="nyhedsbrev" class="text-pink-400">Ja tak til nyhedsbrev og tilbud</label>
+			</div>
+			<div class="flex justify-center">
+				<Button type="submit">Til betaling</Button>
+			
+		</div>
+		</form>
+	</section>
 </MainLayout>
