@@ -4,8 +4,8 @@ import Button from '../components/Button.astro';
 import Image from "astro/components/Image.astro";
 import herofoto from "../assets/images/herobillede.svg"
 import skraldespand from "../assets/images/skraldespand.svg"
-import bitcoin from "../assets/images/info_bitcoin.svg"
-import scooter from "../assets/images/scooter.svg"
+import bitcoin from "../assets/images/bitcoin_mining.svg"
+import scooter from "../assets/images/scooter2.svg"
 import jorden from "../assets/images/jorden.svg"
 ---
 <MainLayout title="Titel">
@@ -20,7 +20,7 @@ import jorden from "../assets/images/jorden.svg"
 			</div>
 		</div>
 	</section>
-	<article class="grid grid-cols-7 gap-6 bg-yolk-60 p-8">
+	<article class="grid grid-cols-7 gap-6 bg-yolk-60 p-10">
 		<section id="digitalt_skrald" class="col-span-3 pl-14 pr-12">
 			<h2 class="text-4xl">Hvad er digitalt skrald?</h2>
 			<p>I den digitale verden, ligesom i miljøet, er der en enorm mængde affald. <br>
@@ -36,20 +36,23 @@ import jorden from "../assets/images/jorden.svg"
 				Hvis vi sletter alle unødvendige filer, apps, fotos og videoer, sparer vi ikke kun en enorm mængde CO2, men vi forlænger også levetiden på vores gadgets, føler os mere afbalancerede og får kontrol over vores liv, danner nye digitale vaner, og vi vil være mere effektive og tilfredse. Det lyder som en win-win!</p>
 		</section>
 	</article>
-	<section id="vidste_du" class="mx-auto">
- 		<h2>Vidste du?</h2>
-		<div class="grid grid-cols-3">
-			<Image src={bitcoin} alt="Miner efter bitcoin" class=" w-full"></Image>
-			<Image src={scooter} alt="kvinde på scooter" class="w-full"></Image>
-			<Image src={jorden} alt="e-mails flyver rundt om jorden" class="w-full"></Image>
+	<section id="vidste_du" class="mx-auto py-20 bg-clover-100 text-white-100">
+ 		<h2 class="grid justify-center text-4xl ">Vidste du?</h2>
+		<div class="grid grid-cols-3 gap-3 px-20 -my-24">
+			<Image src={bitcoin} alt="Miner efter bitcoin" class="w-full" width="750"></Image>
+			<Image src={scooter} alt="kvinde på scooter" class="w-full" width="750"></Image>
+			<Image src={jorden} alt="e-mails flyver rundt om jorden" class="w-full" width="750"></Image>
 		</div>
-		<div class="grid grid-cols-2">
-			<p>Hvis 70 millioner streaming-abonnenter sænkede kvaliteten af deres streamingtjenester fra HD til Standard, ville der være en månedlig reduktion på 3,5 millioner tons CO2 - svarende til at eliminere 6% af den samlede månedlige kulforbrug i USA.</p>
-			<p>Vores ubegrænsede forbrug af data i dag kræver 3 gange mere energi end alle solpaneler i verden kan producere. Vores internetvanvid fungerer primært på fossile brændstoffer, så at klikke, rulle og streame er ansvarlig for mere end 870 millioner tons CO2, hvilket tilføjer mere kraft til den dødelige globale opvarmnings-trend.</p>
-			<p>En medarbejder, der deltager i 15 timers online-møder med sit kamera tændt, skaber 9,4 kg CO2 om måneden. Ved at slukke for videoen ville han spare den samme mængde emissioner, som der skabes ved at oplade en smartphone hver nat i over 3 år (1151 dage).</p>
-			<p>Google bruger 15.616 MWh energi hver dag, hvilket er mere end Hoover Dam producerer, og det ville forsyne et helt land med 1 million indbyggere i en dag.</p>
+		<div class="grid grid-cols-2 gap-4 px-40">
+			<p class="pr-8"><b>Hvis 70 millioner streaming-abonnenter sænkede kvaliteten af deres streamingtjenester fra HD til Standard, </b> ville der være en månedlig reduktion på 3,5 millioner tons CO2 - svarende til at eliminere 6% af den samlede månedlige kulforbrug i USA.</p>
+			<p class="pl-8"><b>Vores ubegrænsede forbrug af data i dag kræver 3 gange mere energi end alle solpaneler i verden kan producere. </b> Vores internetvanvid fungerer primært på fossile brændstoffer, så at klikke, rulle og streame er ansvarlig for mere end 870 millioner tons CO2, hvilket tilføjer mere kraft til den dødelige globale opvarmnings-trend.</p>
+			<p class="pr-8"><b>En medarbejder, der deltager i 15 timers online-møder med sit kamera tændt, skaber 9,4 kg CO2 om måneden. </b> Ved at slukke for videoen ville han spare den samme mængde emissioner, som der skabes ved at oplade en smartphone hver nat i over 3 år (1151 dage).</p>
+			<p class="pl-8"><b>Google bruger 15.616 MWh energi hver dag, hvilket er mere end Hoover Dam producerer, </b> og det ville forsyne et helt land med 1 million indbyggere i en dag.</p>
 		</div>
-		<Button>Del med en ven!</Button>
+		<div class="grid justify-items-end px-20 pt-5">
+			<Button >Del med en ven!</Button>
+		</div>
+		
 	</section>
 	<section id="How_to">
 		<h2>How to:</h2>
