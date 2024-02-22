@@ -6,7 +6,7 @@ import herofoto from "../assets/images/herobillede.svg"
 import bitcoin from "../assets/images/info_bitcoin.svg"
 ---
 <MainLayout title="Titel">
-	<section id="hero" class="grid grid-cols-3 gap-2">
+	<section id="hero" class="grid grid-cols-3 gap-2 container mx-auto">
 		<div class="col-span-2">
 			<Image src={herofoto} alt="herofoto" class=""></Image>
 		</div>
@@ -18,7 +18,7 @@ import bitcoin from "../assets/images/info_bitcoin.svg"
 			</div>
 		</div>
 	</section>
-	<article class="grid grid-cols-5 bg-yolk-60">
+	<article class="grid grid-cols-5 bg-yolk-60 mx-auto w-screen">
 		<section id="digitalt_skrald" class="col-span-2">
 			<h2>Hvad er digitalt skrald</h2>
 			<p>I den digitale verden, ligesom i miljøet, er der en enorm mængde affald. <br>
@@ -202,3 +202,12 @@ import bitcoin from "../assets/images/info_bitcoin.svg"
 		</form>
 	</section>
 </MainLayout>
+
+<style>
+	* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+</style>
