@@ -1,27 +1,35 @@
 ---
+import Button from '../components/Button.astro';
+
 ---
-<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full text-pink-600 font-mono bg-black" >
+<div x-data="{ showmenu: false }" class="border-y-4 px-4 fixed lg:static" >
     <div id="navbar" class="flex flex-row justify-between">
     <div id="logo" class="ml-10">
         <a href="#hero">Site logo</a>
     </div>
     <nav id="desktopmenu" class="hidden lg:block">
-        <ul class="flex flex-row gap-10 text-lg">
-            <li class="hover:italic hover:text-pink-400"><a href="#hero">Københavnerbilleder</a></li>
-            <li class="hover:italic hover:text-pink-400"><a href="#chapters">Bogens indhold</a></li>
-            <li class="hover:italic hover:text-pink-400"><a href="#about_the_author">Forfatteren</a></li>
-            <li class="hover:italic hover:text-pink-400 mr-10"><a href="#buy">Køb nu</a></li>
+        <ul class="flex flex-row gap-10 text-lg font-poppins list-none">
+            <li class=""><a class="no-underline " href="#hero">Problemet med digitalt skrald</a></li>
+            <li class=""><a class="no-underline " href="#chapters">Hvad er digitalt skrald?</a></li>
+            <li class=""><a class="no-underline " href="#about_the_author">Vidste du?</a></li>
+            <li class=""><a class="no-underline " href="#buy">How-to</a></li>
+            <li class=""><a class="no-underline " href="#buy">Hvor meget har jeg slettet?</a></li>
+            <Button>Registrer dig</Button>
         </ul>
     </nav>
     <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
     </div>
     <nav id="mobilmenu" class="flex flex-col content-center pt-4 " 
     x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-        <ul >
-            <li class="text-center py-2 hover:italic hover:text-pink-400"><a href="#hero">Københavnerbilleder</a></li>
-            <li class="text-center py-2 hover:italic hover:text-pink-400"><a href="#chapters">Bogens indhold</a></li>
-            <li class="text-center py-2 hover:italic hover:text-pink-400"><a href="#about_the_author">Forfatteren</a></li>
-            <li class="text-center py-2 hover:italic hover:text-pink-400"><a href="#buy">Køb nu</a></li>
+        <ul class="font-poppins list-none">
+            <li class="text-center"><a class="no-underline " href="#hero">Problemet med digitalt skrald</a></li>
+            <li class="text-center"><a class="no-underline " href="#chapters">Hvad er digitalt skrald?</a></li>
+            <li class="text-center"><a class="no-underline " href="#about_the_author">Vidste du?</a></li>
+            <li class="text-center"><a class="no-underline " href="#buy">How-to</a></li>
+            <li class="text-center"><a class="no-underline " href="#buy">Hvor meget har jeg slettet?</a></li>
+            <div class="text-center">
+            <Button>Registrer dig</Button>
+            </div>
         </ul>
     </nav>
 </div>
