@@ -3,30 +3,32 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Image from "astro/components/Image.astro";
 import herofoto from "../assets/images/herobillede.svg"
+import skraldespand from "../assets/images/skraldespand.svg"
 import bitcoin from "../assets/images/info_bitcoin.svg"
 ---
 <MainLayout title="Titel">
-	<section id="hero" class="grid grid-cols-3 gap-2 container mx-auto">
-			<Image src={herofoto} alt="herofoto" class="col-span-2 w-full"></Image>
-		<div class="col-span-1 flex flex-col justify-center">
-			<h1 class="font-poppins grid justify-items-center text-5xl">Digital Skraldedag</h1>
-			<h2 class="font-poppins grid justify-items-center text-5xl font-normal">16. Marts 2024</h2>
-			<div class="grid grid-cols-2 grid justify-items-center">
+	<section id="hero" class="grid grid-cols-5 gap-2 container mx-auto">
+			<Image src={herofoto} alt="herofoto" class="col-span-3 w-full"></Image>
+		<div class="col-span-2 flex flex-col justify-center">
+			<h1 class="grid justify-items-center text-5xl leading-normal">Digital Skraldedag</h1>
+			<h2 class="grid justify-items-center text-5xl font-normal leading-normal py-12">16. Marts 2024</h2>
+			<div class="grid grid-cols-2 justify-items-center">
 				<Button>Save the date!</Button>
 				<Button>Registrer dig</Button>
 			</div>
 		</div>
 	</section>
-	<article class="grid grid-cols-5 bg-yolk-60 m-auto w-screen">
+	<article class="grid grid-cols-5 gap-5 bg-yolk-60 m-auto ">
 		<section id="digitalt_skrald" class="col-span-2">
-			<h2>Hvad er digitalt skrald</h2>
+			<h2 class="text-4xl">Hvad er digitalt skrald</h2>
 			<p>I den digitale verden, ligesom i miljøet, er der en enorm mængde affald. <br>
 				Unødvendige e-mails, filer, apps, duplikater af fotos og videoer udgør alt sammen digitalt affald.
 				Dette digitale affald skaber digital forurening, der fortsætter med at forbruge energi, selv når vi har glemt det. <br><br>
 				Digitalt affald ligger i backup på servere, der giver os cloud-service, og fortsætter med at forbruge elektricitet.</p>
 		</section>
+		<Image src={skraldespand} alt="skraldespand der er overfyldt med e-mails, billeder og apps" class="col-span-1 w-full"></Image>
 		<section id="" class="col-span-2">
-			<h2>Problemet med digitalt skrald</h2>
+			<h2 class="text-4xl">Problemet med digitalt skrald</h2>
 			<p>Hvert år producerer internettet og dets understøttende systemer mere end 900 millioner tons CO2. De globale energirelaterede CO2-emissioner steg i 2022 med 0,9%, og nåede et nyt højdepunkt på over 36,8 milliarder ton. <br><br>
 				Ifølge nogle beregninger udgør internetanvendelse 3,7% af de globale emissioner, hvilket svarer til al luftfart i verden; dette tal forventes at fordobles inden 2025. Nogle studier estimerer, at internettet vil forbruge 20 procent af verdens samlede energi inden 2030. <br><br>
 				Hvis vi sletter alle unødvendige filer, apps, fotos og videoer, sparer vi ikke kun en enorm mængde CO2, men vi forlænger også levetiden på vores gadgets, føler os mere afbalancerede og får kontrol over vores liv, danner nye digitale vaner, og vi vil være mere effektive og tilfredse. Det lyder som en win-win!</p>
