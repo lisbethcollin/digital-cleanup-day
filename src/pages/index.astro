@@ -2,7 +2,8 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Image from "astro/components/Image.astro";
-import herofoto from "../assets/images/plane.png"
+import herofoto from "../assets/images/herobillede.svg"
+import bitcoin from "../assets/images/info_bitcoin.svg"
 ---
 <MainLayout title="Titel">
 	<section id="hero" class="grid grid-cols-3 gap-2">
@@ -36,7 +37,7 @@ import herofoto from "../assets/images/plane.png"
 	<section id="vidste_du" class="mx-auto">
  		<h2>Vidste du?</h2>
 		<div class="grid grid-cols-3 ">
-			<Image src={} alt=""></Image>
+			<Image src={bitcoin} alt="Mining for bitcoin" class=""></Image>
 			<Image src={} alt=""></Image>
 			<Image src={} alt=""></Image>
 		</div>
