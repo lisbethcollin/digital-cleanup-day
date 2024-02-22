@@ -1,6 +1,14 @@
 ---
+import Button from '../components/Button.astro';
+import logo from "../assets/images/logo.png"
+import Image from "astro/components/Image.astro";
+
 ---
-<div>
-<p>Footer</p>
+<div class="bg-yolk-100 grid grid-cols-5">
+<div class="col-span-2" >
+    <h1>Hvad er Digital Skraldedag?</h1>
+<p>Digital Skraldedag, organiseret af Let's Do It World, er en global initiativ, der sigter mod at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og organisere deres online tilstedeværelse.</p>
+<Button size="medium">Tilmeld nyhedsbrev!</Button>
 </div>
-  
+<Image src={logo} alt="logo" class="w-20 h-20 "></Image>
+</div>
