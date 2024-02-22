@@ -7,72 +7,184 @@ import herofoto from "../assets/images/plane.png"
 <MainLayout title="Titel">
 	<section id="hero" class="grid grid-cols-3 gap-2">
 		<div class="col-span-2">
-			<Image src={herofoto} alt="herofoto" 
-
-			class=""></Image>
+			<Image src={herofoto} alt="herofoto" class=""></Image>
 		</div>
 		<div class="col-span-1">
-			<h2 class="font-poppins">Hero section</h2>
+			<h2 class="font-poppins">Digital Skraldedag</h2>
+			<div>
+				<Button>Save the date!</Button>
+				<Button>Registrer dig</Button>
+			</div>
 		</div>
 	</section>
-	<section id="digitalt_skrald">
-		<h2>Hvad er digitalt skrald</h2>
+	<article class="grid grid-cols-5">
+		<section id="digitalt_skrald" class="col-span-2">
+			<h2>Hvad er digitalt skrald</h2>
+			<p>I den digitale verden, ligesom i miljøet, er der en enorm mængde affald. <br>
+				Unødvendige e-mails, filer, apps, duplikater af fotos og videoer udgør alt sammen digitalt affald.
+				Dette digitale affald skaber digital forurening, der fortsætter med at forbruge energi, selv når vi har glemt det. <br><br>
+				Digitalt affald ligger i backup på servere, der giver os cloud-service, og fortsætter med at forbruge elektricitet.</p>
+		</section>
+		<Image src={} alt="" class="col-span-1"></Image>
+		<section id="" class="col-span-2">
+			<h2>Problemet med digitalt skrald</h2>
+			<p>Hvert år producerer internettet og dets understøttende systemer mere end 900 millioner tons CO2. De globale energirelaterede CO2-emissioner steg i 2022 med 0,9%, og nåede et nyt højdepunkt på over 36,8 milliarder ton. <br><br>
+				Ifølge nogle beregninger udgør internetanvendelse 3,7% af de globale emissioner, hvilket svarer til al luftfart i verden; dette tal forventes at fordobles inden 2025. Nogle studier estimerer, at internettet vil forbruge 20 procent af verdens samlede energi inden 2030. <br><br>
+				Hvis vi sletter alle unødvendige filer, apps, fotos og videoer, sparer vi ikke kun en enorm mængde CO2, men vi forlænger også levetiden på vores gadgets, føler os mere afbalancerede og får kontrol over vores liv, danner nye digitale vaner, og vi vil være mere effektive og tilfredse. Det lyder som en win-win!</p>
+		</section>
+	</article>
+	<section id="vidste_du" class="mx-auto">
+ 		<h2>Vidste du?</h2>
+		<div class="grid grid-cols-3 ">
+			<Image src={} alt=""></Image>
+			<Image src={} alt=""></Image>
+			<Image src={} alt=""></Image>
+		</div>
+		<div class="grid grid-cols-2">
+			<p>Hvis 70 millioner streaming-abonnenter sænkede kvaliteten af deres streamingtjenester fra HD til Standard, ville der være en månedlig reduktion på 3,5 millioner tons CO2 - svarende til at eliminere 6% af den samlede månedlige kulforbrug i USA.</p>
+			<p>Vores ubegrænsede forbrug af data i dag kræver 3 gange mere energi end alle solpaneler i verden kan producere. Vores internetvanvid fungerer primært på fossile brændstoffer, så at klikke, rulle og streame er ansvarlig for mere end 870 millioner tons CO2, hvilket tilføjer mere kraft til den dødelige globale opvarmnings-trend.</p>
+			<p>En medarbejder, der deltager i 15 timers online-møder med sit kamera tændt, skaber 9,4 kg CO2 om måneden. Ved at slukke for videoen ville han spare den samme mængde emissioner, som der skabes ved at oplade en smartphone hver nat i over 3 år (1151 dage).</p>
+			<p>Google bruger 15.616 MWh energi hver dag, hvilket er mere end Hoover Dam producerer, og det ville forsyne et helt land med 1 million indbyggere i en dag.</p>
+		</div>
+		<Button>Del med en ven!</Button>
 	</section>
-	<section id="">
-		<h2>Problemet med</h2>
+	<section id="How_to">
+		<h2>How to:</h2>
+		<article>
+			<div>
+				<div class="rounded-"> 
+					<h3>Step 1:</h3>
+				</div>
+				<h3>Ryd op på din smartphone</h3>
+			</div>
+			<p>Fjern alle applikationer, som du ikke har brugt i et stykke tid eller kun har brugt et par gange. Vær ærlig og dristig! Slet alle de unødvendige, glemte gamle apps og spil, som du har downloadet, men endnu ikke rigtig har prøvet. Du vil heller ikke begynde at bruge dem senere - helt sikkert! De forbruger energi, selv når de ikke er i brug, og kan forbruge hundredvis af megabyte data hver måned til opdateringer. <br><br>
+				Glem ikke at slette eventuelle brugerkonti (inklusive e-mails) og al dens data, du oprettede, da du var 15 år og ikke har haft adgang til i et årti. Du vil speede din telefon op og øge batteritiden - det er altid værd at have så få apps som nødvendigt. <br><br>
+				Gennemgå dine fotos og videoer. Ved at slette det unødvendige og duplikater kan du frigøre titusinder af gigabyte værdifuld lagerplads. Se retningslinjerne for, hvordan du rydder op på din smartphone og tablet.</p>
+		</article>
+		<article>
+			<div>
+				<div class="rounded-"> 
+					<h3>Step 2:</h3>
+				</div>
+				<h3>Ryd op på din PC eller bærbare computer</h3>
+			</div>
+			<p>Ryd op på din PC og slet filer, der er duplikater eller er blevet ubrugelige. Sorter dine fotos, slet duplikater og de slørede. Gennemgå videoerne og slet sete eller unødvendige filer. Arkiver de vigtige filer. Vær forberedt på at finde virkelig fantastiske ting på din computer! Se retningslinjerne for, hvordan du rydder op på din computer og drev.</p>
+		</article>
+		<article>
+			<div>
+				<div class="rounded-"> 
+					<h3>Step 3:</h3>
+				</div>
+				<h3>Ryd op i din mailboks</h3>
+			</div>
+			<p>Filtrér e-mails efter den ældste og arkiver dem. AFBESTIL abonnementer på nyhedsbreve, som du ikke læser. Vælg lange samtaler, vælg den nyeste og SLET alt andet. Søg efter fælles navne, adresser og ord for at samle lignende e-mails, så du kan håndtere dem som masse. Vær modig og klik på SLET-knappen. Se retningslinjerne for, hvordan du rydder op i din mailboks!</p>
+		</article>
+		<article>
+			<div>
+				<div class="rounded-"> 
+					<h3>Step 4:</h3>
+				</div>
+				<h3>Lav nye arragmenter</h3>
+			</div>
+			<p>I stedet for at sende e-mails, brug flere co-working spaces. Hold op med at sende 'ok' og 'tak' e-mails! Opbevar de vigtige filer i en sky et sted, så der ikke er behov for at beholde den samme fil på hver computer. Tænk først, før du tager backup. Skab mindre "hurtigt indhold" og vær mere bevidst om dine videoer og fotos. Sørg for kun at tage backup af filer, som du får brug for, og fotos, som du elsker. <br><br>
+				Små ændringer i dine internetvaner såsom at slukke for video under et virtuelt møde, reducere kvaliteten af streamingtjenester, begrænse spilletiden, begrænse tiden på sociale medier og afmelde dig nyhedsbreve og e-mail-lister kan markant reducere din miljøpåvirkning! <br><br>
+				Vær kreativ og lev let!</p>
+		</article>
 	</section>
-	<section>
- 		<h2>Vidste du </h2>
-	</section>
-	<section>
-		<h2>How to</h2>
-	</section>
-	<section>
-		<h2>Hvor meget?</h2>
+	<section id="hvor_meget">
+		<h2>Hvor meget har jeg slettet?</h2>
+		<article id="email">
+			<h3>SLETNING AF E-MAILS</h3>
+			<div>
+				<ol>
+					<li>Tjek den aktuelle størrelse af din mailboks. <br> Gå til Outlook > Filer > Indstillinger for mailboks > skriv antallet af ledige GB i din mailboks ned. Gå ikke glip af dette, ellers vil du ikke kende resultaterne af dine oprydningsindsatser!</li>
+					<li>Filtrer e-mails efter den ældste, du har, og saml dem i én mappe.</li>
+					<li>Søg efter fælles navne, adresser og ord for at samle lignende e-mails, så du kan håndtere dem som masse. Vær modig og klik på SLET-knappen.</li>
+					<li>Vælg lange samtaler, vælg den nyeste og SLET alt andet. <br> Hvis det heller ikke er relevant, så tør at slippe af med den sidste.</li>
+					<li>Afmeld dig fra alle nyhedsbreve, som ikke har fanget din dybere opmærksomhed. <br> Du vil helt sikkert ikke læse dem i fremtiden. </li>
+				</ol>
+				<ol start="6">
+					<li>FYI-e-mails (til din information) - bare SLET!</li>
+					<li>OK-e-mails (chats med en stor gruppe mennesker, som du kunne gøre i andre kanaler) - bare SLET!</li>
+					<li>Bloker uønskede afsendere. <br> Gå til Startside > Uønsket > Bloker afsender.</li>
+					<li>Slå e-mailnotifikationer fra apps og sociale medier fra.</li>
+					<li>Slet gamle aftaler fra dine online kalendere. <br> Alle disse overskredne aftaler hober sig op i din kalendermappe og skaber digitalt affald. Gør det til din ugentlige rutine at slette dem.</li>
+					<h3>Tillykke! Du gjorde virkelig et godt stykke arbejde!</h3>
+				</ol>
+			</div>
+		</article>
+		<article id="mobil_lagerplads">
+			<h3>RYD OP I MOBIL LAGERPLADS</h3>
+			<div>
+				<ol>
+					<li>Skriv den aktuelle ledige lagerplads på din mobiltelefon ned. <br><br>
+						o Android-telefoner: Menu > Indstillinger > Lagerplads <br>
+						o iPhones: Indstillinger > Generelt > Lagerplads <br> <br>
+						Gå ikke glip af dette, ellers vil du ikke kende dine oprydningsresultater!</li>
+					<li>Du skal turde at slette alt unødvendigt <br><br>
+						Din telefon bør have mindst 1 GB hukommelsesplads ledig. Fjern alle applikationer, som du ikke har brugt eller kun har brugt et par gange. Vær ærlig og modig! Slet alle disse unødvendige, glemte, gamle apps og spil, som du har downloadet, men aldrig rigtig har brugt. Du vil heller ikke begynde at bruge dem senere - helt sikkert! <br> <br>
+						Du kan også slette din telefons forudinstallerede applikationer, men sørg for, at du ikke fjerner systemapplikationer.</li>
+					<li>Tag dig af din cache <br><br>
+						Det er værd at rydde din telefons cache en gang imellem. <br> <br>
+						o På Android-telefoner, gå til Indstillinger > Tryk på Lagerplads overskriften > Find den applikation, du vil rydde > Ryd cache <br>
+						o På iPhones, gå til Indstillinger > Safari > Ryd historik og webstedsdata > Ryd historik og data <br> <br>
+						Tjek også, hvor meget plads dine apps tager, gå til Indstillinger > Generelt > Brug (iPhone). Du bør slette de tungeste apps og geninstallere dem igen. Du vil blive overrasket over, hvor meget mere plads dette giver dig.</li>
+				</ol>
+				<ol start="4">
+					<li>Opbevar dine vigtige dokumenter i skyen og fotos og videoer på eksterne harddiske. <br><br>
+						Har du virkelig brug for ti versioner af det samme billede, eller kunne du gemme kun det bedste? Det er typisk at holde dine mest værdifulde minder på din telefon ALLENE, og det er en stor risiko at miste dem alle på én gang! Så opbevar dine personlige fotos og videoer på eksterne harddiske, og dine vigtige dokumenter i skytjenester som iCloud, Dropbox eller Microsoft OneDrive. <br><br>
+						På eksterne harddiske er dine billeder og videoer sikre uden at optage plads på din telefon. Ekstern lagring er en billig måde at opbevare dine minder på uden at bekymre dig om at miste dem. Hvis du ikke har gjort dette før, er det nu tid til at begynde!</li>
+					<li>Gå tilbage til den oprindelige lagerstørrelse på din telefon - se tallet, du skrev ned i begyndelsen, og tjek derefter den aktuelle størrelse og foretag beregningerne - hvor mange GB lykkedes det dig at slette?</li>
+					<li>Endelig, gå tilbage til vores kampagneside og udfyld antallet af slettede gigabyte. <br>
+						Hvis du ønsker at fortsætte oprydningen, kan du deltage igen og udfylde de nye tal.</li>
+					<h3>Tillykke! Du gjorde virkelig et godt stykke arbejde!</h3>
+				</ol>
+			</div>
+		</article>
 	</section>
 	<section id="formular" class="max-w-lg mx-auto ">
+		<h2>Registrer dit digitale skraldebidrag her!</h2>
 		<form class="mt-8 max-w-lg">
-			<h2 class="text-4xl mt-20 -mb-2 text-pink-500 font-Poppins">Køb bogen</h2>
 			<div class="grid grid-cols-1 gap-2 mt-8">
-				<label for="antal" class="text-pink-400">Antal:</label>
-				<input type="number" id="antal" placeholder="1" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-			</div>
-			<div class="mt-8">
-				<span class="text-pink-400 mr-2">Levering:</span>
-				<input type="radio" id="postnord" name="levering" >
-				<label for="postnord" checked="checked" class="text-pink-400 mx-2">Postnord</label>
-				<input type="radio" name="levering" id="afhent">
-				<label for="afhent" class="text-pink-400 mx-2">Afhent selv</label>
+				<label for="navn" class="text-pink-400">Fornavn</label>
+				<input type="text" id="fornavn" placeholder="Fornavn" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
 			</div>
 			<div class="grid grid-cols-1 gap-2 mt-8">
-				<label for="navn" class="text-pink-400">Navn:</label>
-				<input type="text" id="navn" placeholder="Navn" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-			</div>
-			<div class="grid grid-cols-1 gap-2 mt-8">
-				<label for="adresse" class="text-pink-400">Adresse:</label>
-				<input type="text" id="adresse" placeholder="Adresse" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">  
+				<label for="navn" class="text-pink-400">Efternavn</label>
+				<input type="text" id="efternavn" placeholder="Efternavn" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
 			</div>
 			<div class="grid grid-cols-1 gap-2 mt-8">
 				<label for="mail" class="text-pink-400">E-mail:</label>
 				<input type="email" id="mail" placeholder="E-mail" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
 			</div>
-			<div class="grid grid-cols-6 gap-2 mt-8">
-				<label for="by" class="text-pink-400 col-span-6">Postnummer & by</label>
-				<input type="text" name="postnummer" id="by" placeholder="Post nr." class="col-span-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-				<input type="text" name="bynavn" id="by" placeholder="By" class="col-span-4 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+			<div>
+				<label for="land">Land</label>
+				<select id="land" name="land">
+				  <option value="danmark">Danmark</option>
+				  <option value="sverige">Sverige</option>
+				  <option value="norge">Norge</option>
+				  <option value="finland">Finland</option>
+				</select>
 			</div>
 			<div class="grid grid-cols-1 gap-2 mt-8">
-				<label for="tlf" class="text-pink-400">Telefon:</label>
-				<input type="tel" id="tlf" placeholder="Telefon" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+				<label for="antal" class="text-pink-400">Antal af deltagere</label>
+				<input type="number" id="antal" placeholder="1" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+			</div>
+			<div class="grid grid-cols-1 gap-2 mt-8">
+				<label for="antal" class="text-pink-400">Hvor mange GB har du slettet?</label>
+				<input type="number" id="GB" placeholder="GB" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+			</div>
+			<div class=" mt-8">
+				<input type="checkbox" id="vilkår" >
+				<label for="vilkår" class="text-pink-400">Jeg accepterer vilkårene for Digiral Skraldedag </label>
 			</div>
 			<div class=" mt-8">
 				<input type="checkbox" id="nyhedsbrev" >
-				<label for="nyhedsbrev" class="text-pink-400">Ja tak til nyhedsbrev og tilbud</label>
+				<label for="nyhedsbrev" class="text-pink-400">Jeg vil gerne tilmeldes nyhedsbrev fra Digital Skraldedag</label>
 			</div>
 			<div class="flex justify-center">
-				<Button type="submit">Til betaling</Button>
-			
-		</div>
+				<Button type="submit">Registrer!</Button>
+			</div>
 		</form>
 	</section>
 </MainLayout>
