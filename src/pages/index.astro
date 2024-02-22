@@ -7,18 +7,17 @@ import bitcoin from "../assets/images/info_bitcoin.svg"
 ---
 <MainLayout title="Titel">
 	<section id="hero" class="grid grid-cols-3 gap-2 container mx-auto">
-		<div class="col-span-2">
-			<Image src={herofoto} alt="herofoto" class=""></Image>
-		</div>
-		<div class="col-span-1">
-			<h2 class="font-poppins">Digital Skraldedag</h2>
-			<div>
+			<Image src={herofoto} alt="herofoto" class="col-span-2 w-full"></Image>
+		<div class="col-span-1 flex flex-col justify-center">
+			<h1 class="font-poppins grid justify-items-center text-5xl">Digital Skraldedag</h1>
+			<h2 class="font-poppins grid justify-items-center text-5xl font-normal">16. Marts 2024</h2>
+			<div class="grid grid-cols-2 grid justify-items-center">
 				<Button>Save the date!</Button>
 				<Button>Registrer dig</Button>
 			</div>
 		</div>
 	</section>
-	<article class="grid grid-cols-5 bg-yolk-60 mx-auto w-screen">
+	<article class="grid grid-cols-5 bg-yolk-60 m-auto w-screen">
 		<section id="digitalt_skrald" class="col-span-2">
 			<h2>Hvad er digitalt skrald</h2>
 			<p>I den digitale verden, ligesom i miljøet, er der en enorm mængde affald. <br>
